@@ -38,9 +38,9 @@ public class JPAConfiguration {
 	   public DataSource dataSource(Environment environment){
 	      DriverManagerDataSource dataSource = new DriverManagerDataSource();
 	      dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-	      dataSource.setUrl("jdbc:mysql://localhost:3306/owasp?useTimezone=true&serverTimezone=UTC");
-	      dataSource.setUsername( "root" );
-	      dataSource.setPassword( "Mysql8018" );
+	      dataSource.setUrl("jdbc:mysql://localhost:3306/owasp?useTimezone=true&serverTimezone=UTC&createDatabaseIfNotExist=true");
+	      dataSource.setUsername("root");
+	      dataSource.setPassword("");
 	      return dataSource;
 	   }
 	 
